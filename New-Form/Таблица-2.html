@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="RU">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Таблица</title>
+    <style>
+        table,
+        td,
+        th {
+            border: 1px solid black;
+            border-collapse: collapse;
+        }
+
+        td,
+        th {
+            padding: 10px
+        }
+
+        .payday {
+            text-align: right;
+        }
+
+        .result {
+            font-weight: bold;
+            color: blue;
+        }
+    </style>
+</head>
+
+<body>
+    <table>
+        <caption>Список сотрудников</caption>
+        <thead>
+            <tr>
+                <th>ФИО</th>
+                <th>Отдел</th>
+                <th>ljkjl</th>
+                <th>Зарплата(руб.)</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Иванов Матвей Дмитриевич</td>
+                <td rowspan="3"> Отдел</td>
+                <td>Начальник</td>
+                <td class="payday">80000</td>
+            </tr>
+            <tr>
+                <td>Горофатский Кирилл Юрьевич</td>
+                <td>Администратор</td>
+                <td class="payday">50000</td>
+            </tr>
+            <tr>
+                <td>Мария Горофатская Кирилловна</td>
+                <td>Кадровик</td>
+                <td class="payday">30000</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <td colspan="3">Total </td>
+            <td id="result" class="payday result">160000</td>
+        </tfoot>
+    </table>
+</body>
+
+</html>

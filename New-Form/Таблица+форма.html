@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Таблица</title>
+    <style>
+        table {
+            border: 2px solid black border-collapse: collapse;
+        }
+
+        td {
+            border: 2px solid black
+        }
+
+        .№-1 {
+            text-align: center;
+        }
+
+        .result-1 {
+
+            background-color: blue;
+        }
+
+        .№-2 {
+            text-align: center;
+        }
+
+        .result-2 {
+            background-color: red
+        }
+
+        .№-3 {
+            text-align: center;
+        }
+
+        .result-3 {
+            background-color: yellow;
+        }
+
+        .№-4 {
+            text-align: center;
+        }
+
+        .result-4 {
+            background-color: green;
+        }
+
+        .№-5 {
+            text-align: right;
+        }
+
+        .result-5 {
+            font-weight: bold;
+            color: blue;
+        }
+    </style>
+</head>
+
+<body>
+    <fieldset>
+        <legend>
+            <h1>Таблица №1</h1>
+        </legend>
+        <table border="1">
+            <caption>
+            <tfoot>Список товаров:</tfoot>
+            </caption>
+            <tr>
+                <td>Номер Товара</td>
+                <td>Название Товара</td>
+                <td>Цена товары</td>
+            </tr>
+            <tr>
+                <td>№-1</td>
+                <td>Бананы</td>
+                <td>150р за к.г</td>
+            </tr>
+            <tr>
+                <td>№-2</td>
+                <td>Груши</td>
+                <td>50р за к.г</td>
+            </tr>
+            <tr>
+                <td>№-3</td>
+                <td>Виноград</td>
+                <td>80р за к.г</td>
+            </tr>
+        </table>
+    </fieldset>
+    <fieldset>
+        <legend>
+            <h2>Таблица №2</h2>
+        </legend>
+        <table>
+            <caption>List of product's: Beyblade X</caption>
+            <tr>
+                <td>Выпуск товара</td>
+                <td>Название товара и издание</td>
+                <td>Цена товара</td>
+                <td>Цвет товара</td>
+                <td>Тип товара</td>
+            </tr>
+            <tr>
+                <td>BX-01</td>
+                <td>DranSword 3-60F</td>
+                <td>1980円</td>
+                <td id="result-1" class="№-1 result-1">Blue</td>
+                <td>Attack Type</td>
+            </tr>
+            <tr>
+                <td>BX-02</td>
+                <td>HellsScythe 4-60T</td>
+                <td>1980円</td>
+                <td id="result-2" class="№-2 result-2">Red</td>
+                <td>Balance Type</td>
+            </tr>
+            <tr>
+                <td>BX-03</td>
+                <td>WizardArrow 4-80B</td>
+                <td>1980円</td>
+                <td id="result-3" class="№-3 result-3">Yellow</td>
+                <td>Stamina Type</td>
+            </tr>
+            <tr>
+                <td>BX-04</td>
+                <td>KnightShield 3-80N</td>
+                <td>1980円</td>
+                <td id="result-4" class="№-4 result-4">Green</td>
+                <td>Defense Type</td>
+            </tr>
+            <tr>
+                <td>BX-05</td>
+                <td>WizardArrow 4-80B-Re.ver</td>
+                <td>1400円</td>
+                <td id="result-2" class="№-2 result-2">Red</td>
+                <td>Stamina Type</td>
+            </tr>
+            <tr>
+                <td>BX-05</td>
+                <td>KnightShield 3-80N</td>
+                <td>1400円</td>
+                <td id="result-1" class="№-1 result-1">Blue</td>
+                <td>Defense Type</td>
+            </tr>
+        </table>
+    </fieldset>
+    <fieldset>
+        <legend>
+            <h3>Таблица №3</h3>
+        </legend>
+        <table>
+            <caption>
+            <tfoot>Cписок сотрудников:</tfoot>
+            </caption>
+            <thead>
+                <tr>
+                    <td>Ф-И-О</td>
+                    <td>Отдел</td>
+                    <td>Должность</td>
+                    <td>Зарплата(руб.)</td>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Иванов Матвей Дмитриевич</td>
+                    <td rowspan="3"> Отдел</td>
+                    <td>Начальник</td>
+                    <td class="payday">80000</td>
+                </tr>
+                <tr>
+                    <td>Горофатский Кирилл Юрьевич</td>
+                    <td>Администратор</td>
+                    <td class="payday">50000</td>
+                </tr>
+                <tr>
+                    <td>Мария Горофатская Кирилловна</td>
+                    <td>Кадровик</td>
+                    <td class="payday">30000</td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <td colspan="3">Итого в общей сумме: </td>
+                <td id="result-5" class="№-5 result-5">160000</td>
+            </tfoot>
+        </table>
+    </fieldset>
+</body>
+
+</html>

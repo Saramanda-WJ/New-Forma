@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="RU">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Таблица</title>
+</head>
+
+<body>
+    <Form action="" method="get">
+        <fieldset>
+            <legend>
+                <h1>Авторизация</h1>
+            </legend>
+            <input type="text" placeholder="Логин" name="Login" required>
+            <input type="password" placeholder="Пароль" name="password" required>
+            <input TYPE="Email" placeholder="Введите Эль.почту" name="email" required>
+        </fieldset>
+        <fieldset>
+            <legend>
+                <h2>Ваши интересы</h2>
+            </legend>
+            <input type="checkbox" name="interess" value="Beyblade"> Beyblade <br>
+            <input type="checkbox" name="interess" value="Фотография"> Фотография <br>
+            <input type="checkbox" name="interess" value="Книги"> Книги <br>
+        </fieldset>
+        <fieldset>
+            <legend>
+                <h3>Вы занимаетесь спортом?</h3>
+            </legend>
+            <label>
+                <input type="radio" name="velo" value="Да">Да
+            </label>
+            <label>
+                <input type="radio" name="velo" value="Нет">Нет
+            </label>
+        </fieldset>
+        <fieldset>
+            <legend>
+                <h4>Ваш пол</h4>
+            </legend>
+            <label>
+                <input type="radio" name="gender"> Муж
+            </label>
+            <br>
+            <labeL>
+                <input type="radio" name="gender"> Жен
+            </labeL>
+            <br>
+            Дата рождения: <input type="date" name="date born">
+        </fieldset>
+        <fieldset>
+            <Legend>
+                <h5>Город проживания</h5>
+            </Legend>
+            <select>
+                <option value="" disabled selected>Выберите город</option>
+                <optgroup label="Московская область">Московская область>
+                    <option value="Москва">Москва</option>
+                    <option value="Химки">Химки</option>
+                    <option value="Балашиха">Балашиха</option>
+                    <option value="Одинцово">Одинцово</option>
+                    <option value="Краснознаменск">Краснознаменск</option>
+                </optgroup>
+                <optgroup label="Тюменская область">
+                    <option value="Тобольск">Тобольск</option>
+                    <option value="Ишим">Ишим</option>
+                    <option value="Заводоуковск">Заводоуковск</option>
+                    <option value="Тюмень">Тюмень</option>
+                </optgroup>
+            </select>
+        </fieldset>
+        <fieldset>
+            <Legend>
+                <h6>Обратная связь</h6>
+            </Legend>
+            <textarea name="comment" cols="50" rows="10" placeholder="Текст обратной связи"></textarea>
+        </fieldset>
+        <input type="file" name="" id="">
+        <br>
+        <input type="reset" value="Сброс формы">
+        <button type="submit">Отправить</button>
+    </Form>
+    <hr>
+    <P>
+        <a href="./Таблица+форма.html" target="_blank">*Перейти на страницу №6*</a>
+    </P>
+</body>
+
+</html>
